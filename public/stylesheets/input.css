@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*custom css*/
+div.post-content h1,
+h2 h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  padding-bottom: 0.75rem;
+}
+div.post-content h1 {
+  font-size: 1.5rem;
+}
+div.post-content h2 {
+  font-size: 1.5rem;
+}
+
+div.post-content h3 {
+  font-size: 1.25rem;
+}
+
+div.post-content h4 {
+  font-size: 1.125rem;
+}
+
+div.post-content h5 {
+  font-size: 1rem;
+}
+
+div.post-content h6 {
+  font-size: 0.875rem;
+}
+
+div.post-content p {
+  padding-bottom: 0.75rem;
+}
+div.post-content a {
+  text-decoration: underline;
+  color: blue;
+}
+div.post-content blockquote {
+  background-color: #f2f2f2;
+  border-left: 5px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+div.post-content img {
+  margin: 0 auto;
+}
+div.post-content ol,
+ul {
+  list-style: inherit;
+}

@@ -1,0 +1,29 @@
+<div class="mx-auto flex flex-wrap py-6 items-center justify-center">
+  <section class="w-full md:w-2/3 flex flex-col items-center">
+    <h1 class="font-bold text-2xl">Add New Post</h1>
+    <form action="/admin/add" method="POST" class="my-4" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="title" class="leading-7 text-sm text-gray-600">Title</label>
+        <input type="text" id="title" name="title" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div>
+      <div class="mb-3">
+        <label for="subtitle" class="leading-7 text-sm text-gray-600">Subtitle</label>
+        <input type="text" id="subtitle" name="subtitle" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+      </div>
+      <div class="mb-3">
+        <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Upload file</label>
+        <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" aria-describedby="file_input_help" id="file_input" type="file" name="image" required>
+        <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">
+          SVG, PNG, JPG or GIF.
+        </p>
+
+      </div>
+      <div class="mb-3">
+        <label for="content" class="leading-7 text-sm text-gray-600">Body</label>
+        <textarea type="text" id="content" name="content" class="w-1/2"></textarea>
+      </div>
+      <button class="text-white bg-blue-800 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" type="submit">Submit</button>
+
+    </form>
+  </section>
+</div>
